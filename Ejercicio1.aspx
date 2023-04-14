@@ -18,7 +18,9 @@
                     <tr><!-- Nombre de localidad -->
                         <td><span>Nombre de localidad: </span></td>
                         <td><asp:TextBox ID="tbLocalidad" runat="server"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbLocalidad">Ingresá un valor.</asp:RequiredFieldValidator>
+                        </td>
                     </tr>
                     <tr><!-- Botón "Guardar localidad -->
                         <td></td>
@@ -61,7 +63,7 @@
                     </tr>
                     <tr> <!-- Botón "Guardar Usuario" -->
                         <td></td>
-                        <td><asp:Button ID="btnGuardarUsuario" runat="server" Text="Button" /></td>
+                        <td><asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar usuario" UseSubmitBehavior="False" /></td>
                         <td><asp:Label ID="lbResultadoUsuario" runat="server" Text=""></asp:Label></td>
                     </tr>
                     <tr> <!-- Botón "Ir a Inicio.aspx" -->
