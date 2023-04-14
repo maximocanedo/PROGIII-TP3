@@ -34,7 +34,9 @@
                     <tr> <!-- Nombre de usuario -->
                         <td><span>Nombre de usuario: </span></td>
                         <td><asp:TextBox ID="tbUsuario" runat="server"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RegularExpressionValidator ID="revUsername" runat="server" ControlToValidate="tbUsuario" ValidationExpression="^[a-zA-Z]+$">El nombre debe contener letras.</asp:RegularExpressionValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Contraseña -->
                         <td><span>Contraseña: </span></td>

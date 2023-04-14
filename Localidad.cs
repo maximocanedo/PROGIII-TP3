@@ -55,7 +55,7 @@ namespace PROGIII_TP3 {
             string resultado = string.Join(" ", palabras);
             return resultado;
         }
-        private string RemoveDiacritics(string input) {
+        private static string RemoveDiacritics(string input) {
             string normalizedString = input.Normalize(NormalizationForm.FormD);
             StringBuilder stringBuilder = new StringBuilder();
 

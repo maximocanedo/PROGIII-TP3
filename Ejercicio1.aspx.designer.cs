@@ -67,6 +67,15 @@ namespace PROGIII_TP3 {
         protected global::System.Web.UI.WebControls.TextBox tbUsuario;
 
         /// <summary>
+        /// revUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revUsername;
+
+        /// <summary>
         /// tbClave control.
         /// </summary>
         /// <remarks>
