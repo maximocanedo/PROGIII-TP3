@@ -78,6 +78,15 @@ namespace PROGIII_TP3
         protected global::System.Web.UI.WebControls.TextBox tbClave;
 
         /// <summary>
+        /// Control rfvClave.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvClave;
+
+        /// <summary>
         /// Control tbRepetirClave.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,24 @@ namespace PROGIII_TP3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbRepetirClave;
+
+        /// <summary>
+        /// Control rfvRepetirClave.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRepetirClave;
+
+        /// <summary>
+        /// Control CompareValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// Control tbCorreo.

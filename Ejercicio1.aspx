@@ -38,13 +38,19 @@
                     </tr>
                     <tr> <!-- Contraseña -->
                         <td><span>Contraseña: </span></td>
-                        <td><asp:TextBox ID="tbClave" runat="server"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><asp:TextBox ID="tbClave" runat="server" TextMode="Password"></asp:TextBox></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RequiredFieldValidator ID="rfvClave" runat="server" ControlToValidate="tbClave" ErrorMessage="Ingrese una contraseña.">Ingrese una contraseña.</asp:RequiredFieldValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Repetir contraseña -->
                         <td><span>Repetir contraseña: </span></td>
-                        <td><asp:TextBox ID="tbRepetirClave" runat="server"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><asp:TextBox ID="tbRepetirClave" runat="server" TextMode="Password"></asp:TextBox></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RequiredFieldValidator ID="rfvRepetirClave" runat="server" ControlToValidate="tbRepetirClave" ErrorMessage="Debe repetir su contraseña.">Debe repetir su contraseña.</asp:RequiredFieldValidator>
+                            <br />
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tbClave" ControlToValidate="tbRepetirClave" ErrorMessage="La contraseña debe coincidir con la ingresada previamente.">La contraseña debe coincidir con la ingresada previamente.</asp:CompareValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Correo electrónico -->
                         <td><span>Correo electrónico: </span></td>
