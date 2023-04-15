@@ -49,7 +49,7 @@
                         <td><!-- Introducir validaciones acá. -->
                             <asp:RequiredFieldValidator ID="rfvRepetirClave" runat="server" ControlToValidate="tbRepetirClave" ErrorMessage="Debe repetir su contraseña.">Debe repetir su contraseña.</asp:RequiredFieldValidator>
                             <br />
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tbClave" ControlToValidate="tbRepetirClave" ErrorMessage="La contraseña debe coincidir con la ingresada previamente.">La contraseña debe coincidir con la ingresada previamente.</asp:CompareValidator>
+                            <asp:CompareValidator ID="cvRepetirClave" runat="server" ControlToCompare="tbClave" ControlToValidate="tbRepetirClave" ErrorMessage="La contraseña debe coincidir con la ingresada previamente.">La contraseña debe coincidir con la ingresada previamente.</asp:CompareValidator>
                         </td>
                     </tr>
                     <tr> <!-- Correo electrónico -->
