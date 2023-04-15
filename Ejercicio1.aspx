@@ -49,7 +49,11 @@
                     <tr> <!-- Correo electrónico -->
                         <td><span>Correo electrónico: </span></td>
                         <td><asp:TextBox ID="tbCorreo" runat="server"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="tbCorreo">Ingrese un correo</asp:RequiredFieldValidator>
+                            <br />
+                            <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="tbCorreo" ValidationExpression="^[a-zA-Z0-9_-]{1,256}\@[a-zA-Z0-9_-]{1,256}(\.[a-zA-Z0-9_-]{1,6})+$">Correo no valido</asp:RegularExpressionValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Código Postal -->
                         <td><span>Código Postal: </span></td>
