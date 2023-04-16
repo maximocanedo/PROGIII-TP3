@@ -7,10 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PROGIII_TP3 {
+namespace PROGIII_TP3
+{
 
 
-    public partial class Ejercicio1 {
+    public partial class Ejercicio1
+    {
 
         /// <summary>
         /// form1 control.
@@ -65,6 +67,15 @@ namespace PROGIII_TP3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbUsuario;
+
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
         /// tbClave control.
