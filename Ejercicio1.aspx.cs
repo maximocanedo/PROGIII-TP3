@@ -26,5 +26,9 @@ namespace PROGIII_TP3 {
             lbResultadoLocalidad.Text = msj;
             
         }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
+            lbResultadoUsuario.Text = "Cambios guardados. ";
+        }
     }
 }

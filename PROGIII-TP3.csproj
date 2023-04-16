@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Ejercicio1.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

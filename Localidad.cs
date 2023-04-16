@@ -95,6 +95,7 @@ namespace PROGIII_TP3 {
         /// <param name="ddl">Control DropDownList en el que se cargarán los elementos.</param>
         public void CargarDropDownList(DropDownList ddl) {
             ddl.Items.Clear();
+            ddl.Items.Add(new ListItem("Seleccionar"));
             foreach (string item in Localidades) {
                 ddl.Items.Add(new ListItem(item));
             }
