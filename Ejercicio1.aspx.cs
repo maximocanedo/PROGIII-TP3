@@ -24,7 +24,7 @@ namespace PROGIII_TP3 {
             string msj = "";
             localidades.Agregar(nombre, out msj, i);
             lbResultadoLocalidad.Text = msj;
-            
+            tbLocalidad.Text= "";
         }
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
