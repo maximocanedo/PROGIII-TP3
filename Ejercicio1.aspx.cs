@@ -30,5 +30,9 @@ namespace PROGIII_TP3 {
         protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
             lbResultadoUsuario.Text = "Cambios guardados. ";
         }
+
+        protected void btnIrAInicio_Click(object sender, EventArgs e) {
+            Server.Transfer("Inicio.aspx");
+        }
     }
 }

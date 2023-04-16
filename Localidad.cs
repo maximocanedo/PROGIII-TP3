@@ -100,6 +100,9 @@ namespace PROGIII_TP3 {
                 ddl.Items.Add(new ListItem(item));
             }
         }
+        public void AgregarAlDropDownList(DropDownList ddl, string item) {
+            ddl.Items.Add(new ListItem(item));
+        }
         /// <summary>
         /// Agrega una localidad a la lista de localidades.
         /// </summary>
@@ -113,9 +116,9 @@ namespace PROGIII_TP3 {
                 string nombreAdecuado = FormatearTexto(nombre);
                 Localidades.Add(nombreAdecuado);
                 if (control != null) {
-                    CargarDropDownList((DropDownList)control);
+                    AgregarAlDropDownList((DropDownList)control, nombreAdecuado);
                 }
-                msj = "Localiddad agregada con éxito. ";
+                msj = "Localidad agregada con éxito. ";
                 return true;
             }
             if (existe) msj = "La localidad ya existe en la lista. Intente con otra. ";
