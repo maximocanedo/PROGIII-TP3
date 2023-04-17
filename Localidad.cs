@@ -100,6 +100,11 @@ namespace PROGIII_TP3 {
                 ddl.Items.Add(new ListItem(item));
             }
         }
+        /// <summary>
+        /// Carga sólo un elemento al final de un control DropDownList.
+        /// </summary>
+        /// <param name="ddl">El control DropDownList en el que se cargará el elemento. </param>
+        /// <param name="item">El elemento a agregar. </param>
         public void AgregarAlDropDownList(DropDownList ddl, string item) {
             ddl.Items.Add(new ListItem(item));
         }

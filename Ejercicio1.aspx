@@ -36,7 +36,8 @@
                         <td><span>Nombre de usuario: </span></td>
                         <td><asp:TextBox ID="tbUsuario" CausesValidation="True" runat="server" ValidationGroup="UsuarioGrupo"></asp:TextBox></td>
                         <td><!-- Introducir validaciones acá. -->
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbUsuario" ErrorMessage="RegularExpressionValidator" ValidationExpression="^[a-zA-Z\s]+$" ValidationGroup="UsuarioGrupo">Ingrese su nombre correctamente</asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbUsuario" ErrorMessage="Ingrese un nombre." ValidationGroup="UsuarioGrupo">Ingrese un nombre.</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbUsuario" ErrorMessage="" ValidationExpression="^[a-zA-ZáÁéÉíÍóÓúÚüÜñÑ\s]+$" ValidationGroup="UsuarioGrupo">Ingrese su nombre correctamente</asp:RegularExpressionValidator>
                         </td>
                     </tr>
                     <tr> <!-- Contraseña -->
@@ -67,7 +68,10 @@
                     <tr> <!-- Código Postal -->
                         <td><span>Código Postal: </span></td>
                         <td><asp:TextBox ID="tbCodigoPostal" CausesValidation="True" runat="server" ValidationGroup="UsuarioGrupo"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RequiredFieldValidator ID="rfvCodigoPostal" runat="server" ErrorMessage="Ingrese un código postal válido. " ControlToValidate="tbCodigoPostal" ValidationGroup="UsuarioGrupo"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="revCodigoPostal" ControlToValidate="tbCodigoPostal" ValidationGroup="UsuarioGrupo" ValidationExpression="\d{4}" runat="server" ErrorMessage="Ingrese correctamente código postal"></asp:RegularExpressionValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Localidades -->
                         <td><span>Localidades</span></td>
