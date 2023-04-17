@@ -28,7 +28,7 @@ namespace PROGIII_TP3 {
         }
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
-            lbResultadoUsuario.Text = "Cambios guardados. ";
+            lbResultadoUsuario.Text = "¡Bienvenido/a " + tbUsuario.Text + "!";
         }
 
         protected void btnIrAInicio_Click(object sender, EventArgs e) {
