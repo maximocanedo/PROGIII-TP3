@@ -62,7 +62,7 @@
                         <td><!-- Introducir validaciones acá. -->
                             <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="tbCorreo" ValidationGroup="UsuarioGrupo">Ingrese un correo</asp:RequiredFieldValidator>
                             <br />
-                            <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="tbCorreo" ValidationExpression="^[a-zA-Z0-9_-]{1,256}\@[a-zA-Z0-9_-]{1,256}(\.[a-zA-Z0-9_-]{1,6})+$" ValidationGroup="UsuarioGrupo">Correo no valido</asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="tbCorreo" ValidationExpression="^[a-zA-Z0-9.%+-_]{1,256}@[a-zA-Z0-9.-]{1,256}(.[a-zA-Z0-9-]{1,6})+$" ValidationGroup="UsuarioGrupo">Correo no valido</asp:RegularExpressionValidator>
                         </td>
                     </tr>
                     <tr> <!-- Código Postal -->
