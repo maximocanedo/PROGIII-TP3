@@ -35,7 +35,9 @@
                     <tr> <!-- Nombre de usuario -->
                         <td><span>Nombre de usuario: </span></td>
                         <td><asp:TextBox ID="tbUsuario" CausesValidation="True" runat="server" ValidationGroup="UsuarioGrupo"></asp:TextBox></td>
-                        <td><!-- Introducir validaciones acá. --></td>
+                        <td><!-- Introducir validaciones acá. -->
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbUsuario" ErrorMessage="RegularExpressionValidator" ValidationExpression="^[a-zA-Z\s]+$" ValidationGroup="UsuarioGrupo">Ingrese su nombre correctamente</asp:RegularExpressionValidator>
+                        </td>
                     </tr>
                     <tr> <!-- Contraseña -->
                         <td><span>Contraseña: </span></td>
