@@ -29,6 +29,13 @@ namespace PROGIII_TP3 {
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e) {
             lbResultadoUsuario.Text = "¡Bienvenido/a " + tbUsuario.Text + "!";
+            tbLocalidad.Text = "";
+            tbUsuario.Text = "";
+            tbClave.Text = "";
+            tbRepetirClave.Text = "";
+            tbCorreo.Text = "";
+            tbCodigoPostal.Text = "";
+            ddlLocalidades.SelectedIndex = 0;
         }
 
         protected void btnIrAInicio_Click(object sender, EventArgs e) {
